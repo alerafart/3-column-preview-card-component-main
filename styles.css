@@ -12,33 +12,147 @@ Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
 Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
 */
+.box{
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 2%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  }
+
+  img {
+    max-width:25%;
+    color: hsla(0, 0%, 100%, 0.75)
+  }
+
+.box > h1 {
+  padding-top: 5%;
+  text-transform:uppercase;
+  font-weight:bold ;
+  font-size: 50px;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+  padding-bottom: 10%;
+  padding-right: 20%;
+  margin-bottom: 8%;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+button {
+  border-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  width: 40%;
+  min-width: 7%;
+  height: 50px;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+
+}
+
+#sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+#sedans > button {
+  color: hsl(31, 77%, 52%);
+}
+
+#suvs{
+  background-color:hsl(184, 100%, 22%) ;
+}
+#suvs > button{
+  color:hsl(184, 100%, 22%) ;
+}
 
 
+#luxury{
+  background-color:hsl(179, 100%, 13%) ;
+}
+#luxury > button{
+  color:hsl(179, 100%, 13%) ;
+}
 
+@media screen and (max-device-width: 600px) {
 
+  .wrapper{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 375px;
+  }
+  
+  #sedans{
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+  }
 
+  #luxury{
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
 
+}
 
+@media screen and (min-width: 600px) 
+{
+  .wrapper{
+    margin: auto;
+    padding: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 1300px;
+    }
+  
+  .box{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 30%;
+    height: 80%;
+    padding: auto;
+    }
 
+    #sedans{
+      border-bottom-left-radius: 2%;
+      border-top-left-radius: 2%;
+    }
 
+    #luxury{
+      border-bottom-right-radius: 2%;
+      border-top-right-radius: 2%;
+    }
 
+  .attribution {
+    font-size: 15px; text-align: center;
+    font-family :'Libre Franklin', sans-serif;
+   }
 
+  .attribution a {
+    font-family :'Libre Franklin', sans-serif;
+    color: hsl(228, 45%, 44%); 
+    }
 
+  .attribution a:hover {
+      font-family :'Libre Franklin', sans-serif;
+      color: hsl(228, 45%, 44%); 
+      }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+}               
