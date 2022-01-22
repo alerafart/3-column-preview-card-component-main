@@ -82,7 +82,7 @@ button {
 @media screen and (max-device-width: 600px) {
 
   .wrapper{
-    
+    padding: 1%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -149,8 +149,8 @@ button {
     font-family :'Libre Franklin', sans-serif;
     color: hsl(228, 45%, 44%); 
     }
-
-  .attribution a:hover {
+    
+    .attribution a:hover {
       font-family :'Libre Franklin', sans-serif;
       color: hsl(228, 45%, 44%); 
       }
